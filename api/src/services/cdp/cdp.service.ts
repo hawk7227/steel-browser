@@ -1,4 +1,4 @@
-import { EventEmitter } from "events";
+importimport { EventEmitter } from "events";
 import { FastifyBaseLogger } from "fastify";
 import {
   BrowserFingerprintWithHeaders,
@@ -833,7 +833,8 @@ export class CDPService extends EventEmitter {
           "--enable-crashpad",
           "--crash-dumps-dir=/tmp/chrome-dumps",
           "--noerrdialogs",
-          "--force-device-scale-factor=1",
+          "--force-device-scale-factor=2",
+          "--high-dpi-support=1",
           "--disable-hang-monitor",
         ];
 
